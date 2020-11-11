@@ -1,0 +1,39 @@
+.section-title{
+   border-bottom: 3px solid var(--primary);
+   padding-bottom: 7px;
+   margin: 20px 0;
+   display: inline-block;
+}
+
+.col-12{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+b{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+color: #182135;
+ }
+
+ h3{
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+color: #182135;
+ }
+
+
+ .box-sidebar{
+   margin: 40px auto;
+   margin-left: 30px;
+   max-height: 600px;
+   overflow: auto;
+ }
