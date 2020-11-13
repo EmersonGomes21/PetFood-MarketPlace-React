@@ -1,0 +1,51 @@
+button.cart-button{
+  display:flex; 
+  position: relative;
+  left: 90%;
+  margin-right: 50px; 
+  max-width: 70px;
+  top: -70px;
+  align-items: center;
+ 
+}
+
+.petshop-infos span{
+  vertical-align: middle;
+  color: #626264;
+  font-size: 16px;
+}
+
+
+.petshop-infos span.mdi-star{
+  color: #facd5d;
+}
+
+
+
+.petshop-infos text{
+font-size: 13px;
+vertical-align: middle;
+margin-right: 10px;
+  color: #626264;
+}
+
+ .badge.badge-primary{
+  width: 79px;
+  height: 24px;
+  padding: 4px  8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+
+
+text-align: center;
+  }
+
+
+.petshop-image{
+border-radius: 5px;
+margin-bottom: 20px;
+
+}

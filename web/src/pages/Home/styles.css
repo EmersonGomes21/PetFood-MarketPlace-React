@@ -1,0 +1,50 @@
+.petshop-list-container {
+  max-height: 300px;
+  position: absolute;
+  margin-bottom: 0;
+  top: 91px;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 55.47%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.petshop-list {
+  padding: 15px;
+  display: flex;
+  margin-top: 15px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; /* passar a imagem ao fazer scrool elemento pai*/
+  -webkit-overflow-scrolling: touch; /* compatibilidade dos navegadores */
+  scroll-behavior: smooth; /*suavizar a transição e scrollar*/
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* desabilitar a barra de scrool no firefox*/
+  
+}
+
+.petshop-list::-webkit-scrollbar {
+  display: none; /* desabilitar a barra de scrool no Chrome*/
+}
+
+.petshop-list ul {
+  width: 100%;
+  height: 100%;
+}
+
+.petshop-list ul li{
+
+  flex: none; /* para ocultar os elementos seguintes */
+  width: 100%;
+  height: 400px;
+   scroll-snap-align: start; /* snap no element filho */
+   pointer-events: none; /* disable events mouse this element */
+}
+
+/* .petshop-list::-webkit-scrollbar {
+  scrollbar-width: thin;
+  display: none;
+} */
