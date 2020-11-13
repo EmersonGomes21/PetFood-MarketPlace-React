@@ -30,10 +30,17 @@ line-height: 32px;
 color: #182135;
  }
 
-
  .box-sidebar{
    margin: 40px auto;
    margin-left: 30px;
-   max-height: 600px;
+   max-height: 500px;
    overflow: auto;
+ }
+
+ .col-6{
+   position: sticky;
+ }
+
+ .container2 {
+   display: flex;
  }

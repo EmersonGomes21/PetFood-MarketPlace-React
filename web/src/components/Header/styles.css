@@ -1,8 +1,26 @@
 .coluna{
   display: flex;
+  align-items: center;
 }
 
 header{
 margin: 32px auto;
 
 }
+
+button.cart-button{
+position: relative;
+ margin: auto 30px;
+ width: 100px;
+ height: 50px;
+ border-radius: 20px;
+ background-color: red;
+
+  
+  }
+
+
+  button.cart-button span{
+margin-right: 5px
+  }
+

@@ -1,0 +1,63 @@
+
+#body{
+  display: grid;
+  place-items: center; /* Ajustar tudo ao centro */
+  width: 100vw;
+  height: 100vh;
+
+}
+#items-wrapper{
+  width: 30vw;
+
+}
+
+@media(max-width: 800px){
+  #items-wrapper{
+    width: 80vw;
+  }
+ 
+   }
+
+#items{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; /* passar a imagem ao fazer scrool elemento pai*/
+  -webkit-overflow-scrolling: touch; /* compatibilidade dos navegadores */
+  scroll-behavior: smooth; /*suavizar a transição*/
+  -ms-overflow-style: none;  /* IE and Edge 
+  */
+  scrollbar-width: thin;
+  
+}
+
+
+
+
+
+
+#items::-webkit-scrollbar {
+  display: none;
+}
+/* #items::-webkit-scrollbar-button{
+  display: none;
+} */
+
+
+
+
+
+.item{
+  flex: none; /* para ocultar os elementos seguintes */
+  width: 100%;
+  height: 400px;
+   scroll-snap-align: start; /* snap no element filho */
+   pointer-events: none; /* disable events mouse this element */
+ 
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta as imagens no container */
+
+}

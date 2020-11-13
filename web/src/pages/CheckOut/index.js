@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../../components/Header';
 import './styles.css';
 import Product from '../../components/Product/List';
 const CheckOut = () => {
+
+  const [data] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   return (
-    <div className="h-100">
-      <Header />
+    <div className="h-100 ">
+      <Header showCart/>
 
       <div className="container mt-4">
         <div className="row">
@@ -146,19 +148,23 @@ const CheckOut = () => {
 
             </div>
           </div>
+      
+         
 
-
-          <div className="col-6">
+         <div className="col-6">
             <div className="box col mb-4 box-sidebar">
-              <h4>Minha Sacola (5)</h4>
+              <h4>Minha Sacola ({data.length})</h4>
 
               <div className="row products">
 
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(p => <Product />)}
+                {data.map(p => <Product />)}
 
               </div>
             </div>
           </div>
+
+       
+        
 
 
         </div>
