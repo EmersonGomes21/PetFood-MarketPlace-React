@@ -7,7 +7,7 @@
   height: cal(100% - 190px); /* 100% da tela menos os componetes */
   overflow: auto;
   align-content: flex-start;
-  max-height: 300px;
+  max-height: 530px;
   bottom: 150px;
 }
 .sidebar .footer{
